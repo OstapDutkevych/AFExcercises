@@ -17,11 +17,11 @@ const paths = {
     scss: './src/scss',
   },
   dist: {
-    css: './assets/css',
-    favicon: './assets/favicon',
-    fonts: './assets/fonts',
-    img: './assets/img',
-    js: './assets/js',
+    css: './assetsa/css',
+    favicon: './assetsa/favicon',
+    fonts: './assetsa/fonts',
+    img: './assetsa/img',
+    js: './assetsa/js',
   },
 };
 

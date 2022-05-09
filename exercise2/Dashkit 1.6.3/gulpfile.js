@@ -35,7 +35,7 @@ const paths = {
       dir: './dist'
     },
     libs: {
-      dir: './dist/assets/libs'
+      dir: './dist/assetsa/libs'
     }
   },
   src: {
@@ -44,29 +44,29 @@ const paths = {
       files: './src/**/*'
     },
     css: {
-      dir: './src/assets/css',
-      files: './src/assets/css/**/*'
+      dir: './src/assetsa/css',
+      files: './src/assetsa/css/**/*'
     },
     html: {
       dir: './src',
       files: './src/**/*.html',
     },
     img: {
-      dir: './src/assets/img',
-      files: './src/assets/img/**/*',
+      dir: './src/assetsa/img',
+      files: './src/assetsa/img/**/*',
     },
     js: {
-      dir: './src/assets/js',
-      files: './src/assets/js/**/*'
+      dir: './src/assetsa/js',
+      files: './src/assetsa/js/**/*'
     },
     partials: {
       dir: './src/partials',
       files: './src/partials/**/*'
     },
     scss: {
-      dir: './src/assets/scss',
-      files: './src/assets/scss/**/*',
-      main: './src/assets/scss/*.scss'
+      dir: './src/assetsa/scss',
+      files: './src/assetsa/scss/**/*',
+      main: './src/assetsa/scss/*.scss'
     },
     tmp: {
       dir: './src/.tmp',

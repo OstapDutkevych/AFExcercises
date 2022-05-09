@@ -32,6 +32,7 @@ import {
 
 import { getCSSVariableValue } from './helpers';
 
+console.log('asdasdas')
 Chart.register(
   ArcElement,
   BarController,
@@ -167,6 +168,7 @@ function globalOptions() {
   };
 
   Chart.defaults.scales.category.ticks.padding = 20;
+  console.log('asdasd')
 }
 
 function getOrCreateTooltip(chart) {
@@ -335,6 +337,7 @@ function toggleDataset(toggle) {
 
 function toggleLegend(legend) {
   const chart = Chart.getChart(legend);
+
   const legendEl = document.createElement('div');
 
   chart.legend.legendItems?.forEach((item) => {
