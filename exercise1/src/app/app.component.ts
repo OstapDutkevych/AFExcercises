@@ -36,10 +36,13 @@ export class AppComponent implements OnInit{
         scales: {
           x: {
             grid: {
-              display: false
+              display: false,
             },
           },
           y: {
+            grid: {
+              borderDash: [2]
+            },
             beginAtZero: true,
             ticks: {
               callback: function(value) {
