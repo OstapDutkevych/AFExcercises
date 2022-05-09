@@ -16,7 +16,6 @@ export class AppComponent implements OnInit{
   ngOnInit(){
     Chart.defaults.elements.bar.borderWidth = 0;
     Chart.defaults.elements.bar.borderRadius = 10;
-    Chart.defaults.datasets.bar.maxBarThickness = 10;
     this.context = this.canvas.nativeElement.getContext('2d');
 
     Chart.defaults.color = 'white'
@@ -33,15 +32,18 @@ export class AppComponent implements OnInit{
           x: {
             grid: {
               display: false
-            }
+            },
           },
           y: {
             beginAtZero: true,
             ticks: {
               callback: function(value) {
+                console.log(value)
                 return '$' + value + 'k';
-              }
+              },
+              stepSize: 10
             },
+            stacked: true,
 
           },
         }
@@ -49,6 +51,7 @@ export class AppComponent implements OnInit{
       data: {
         labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
         datasets: [{
+          maxBarThickness:10,
           label: 'Sales',
           data: [25, 20, 30, 22, 17, 10, 18, 26, 28, 26, 20, 32],
           backgroundColor: '#2c7be5',
