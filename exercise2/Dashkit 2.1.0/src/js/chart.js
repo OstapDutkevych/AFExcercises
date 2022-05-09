@@ -32,7 +32,6 @@ import {
 
 import { getCSSVariableValue } from './helpers';
 
-console.log('asdasdas')
 Chart.register(
   ArcElement,
   BarController,
@@ -168,7 +167,6 @@ function globalOptions() {
   };
 
   Chart.defaults.scales.category.ticks.padding = 20;
-  console.log('asdasd')
 }
 
 function getOrCreateTooltip(chart) {
