@@ -28,6 +28,11 @@ export class AppComponent implements OnInit{
     new Chart('feedChart', {
       type: 'bar',
       options: {
+        plugins: {
+          legend: {
+            display: false
+          }
+        },
         scales: {
           x: {
             grid: {
